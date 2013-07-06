@@ -142,6 +142,7 @@ public class DatePickerPlugin extends CordovaPlugin {
 		 * Return the current date with the time modified as it was set in the
 		 * time picker.
 		 */
+		@SuppressWarnings("deprecation")
 		public void onTimeSet(final TimePicker view, final int hourOfDay, final int minute) {
 			Date date = new Date();
 			date.setHours(hourOfDay);
